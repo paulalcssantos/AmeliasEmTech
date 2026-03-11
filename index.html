@@ -9,11 +9,8 @@
 <body>
   <nav>
     <div class="nav-container">
-    <!-- Clicar aqui agora sempre volta para a Home -->
-    <a href="index.html" class="font-heading text-white text-xl">
-        AMELIAS <span style="color:var(--amarelo)">em Tech</span>
-    </a>
-    
+      <img src="assets/logo.png" alt="Logo Amelias" class="nav-logo-img">
+      <a href="index.html" class="font-heading text-white text-xl">AMELIAS <span style="color:var(--amarelo)">em Tech</span></a>
     <div class="nav-links font-heading">
       <a href="index.html">Home</a> <!-- Adicionei o link Home aqui também -->
       <a href="sobre.html">Sobre</a>
@@ -24,7 +21,7 @@
   </div>
 </nav>
 
-  <header class="py-32 text-center text-white" style="background: linear-gradient(135deg, var(--roxo) 0%, var(--preto) 100%);">
+ <!-- <header class="py-32 text-center text-white" style="background: linear-gradient(135deg, var(--roxo) 0%, var(--preto) 100%);">
     <h1 class="font-heading text-5xl md:text-7xl text-white mb-6 leading-tight" style="color: #fbd45c;">AMELIAS<br> <span style="color: #eee6db;">em Tech</span></h1>
     <p class="text-xl md:text-2xl text-white/80 mb-8 leading-relaxed">Meninas aprendendo tecnologia, criando o futuro!<br>Um projeto para meninas de 10 a 17 anos.</p>
     <p class="text-xl md:text-2xl text-white/80 mb-8 leading-relaxed" style="color: #fadaa3;">Aqui, Amelia é escolha e autonomia!</p>
@@ -32,11 +29,28 @@
       <a href="sobre.html" class="btn btn-amarelo font-heading">Conhecer o projeto</a>
       <a href="aulas.html" class="btn btn-rosa font-heading">Assistir aulas</a>
     </div>
-    <div class="hidden lg:block relative">
+  </header> 
+-->
+  <!-- Hero Section -->
+  <section class="py-32 text-center text-white" style="background: linear-gradient(135deg, var(--roxo) 0%, var(--preto) 100%);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 relative z-10">
+     <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="animate-fade-in">
+       <h1 class="font-heading text-5xl md:text-7xl text-white mb-6 leading-tight" style="color: #fbd45c;">AMELIAS<br> <span style="color: #eee6db;">em Tech</span></h1>
+       <p class="text-xl md:text-2xl text-white/80 mb-8 leading-relaxed">Empoderando meninas através da tecnologia.</p>
+       <p class="text-xl md:text-2xl text-white/80 mb-8 leading-relaxed" style="color: #fadaa3;">Aqui, Amelia é escolha e autonomia!</p>
+       <div class="flex flex-wrap gap-4">
+         <a href="sobre.html" class="btn btn-amarelo font-heading">Conhecer o projeto</a>
+         <a href="aulas.html" class="btn btn-rosa font-heading">Assistir aulas</a>
+       </div>
+      </div>
+      <div class="hidden lg:block relative">
        <img src="assets/avatar-amelias.png" alt="Meninas no projeto" class="rounded-3xl">
       </div>
-  </header> 
-
+     </div>
+    </div>
+   </section>
+  
   <section class="py-20 max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
     <div class="card text-center">
       <span class="text-5xl">💻</span>
