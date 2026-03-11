@@ -166,22 +166,23 @@ footer {
 
 .avatar-amelia {
     animation: flutuar 4s ease-in-out infinite;
-    max-width: 100%;
-    height: auto;
-    /* Adiciona uma sombra suave embaixo da personagem */
+    max-height: 350px; /* Limita a altura para o header não crescer demais */
+    width: auto;
     filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3));
+    display: block;
 }
 
+/* Garante que o container do Hero não seja maior que o necessário */
 .hero-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
-    text-align: left; /* Muda de center para left */
+    text-align: left;
 }
 
 @media (min-width: 1024px) {
     .hero-container {
-        grid-template-columns: 1fr 1fr; /* Duas colunas no computador */
+        grid-template-columns: 1.2fr 0.8fr; /* Texto um pouco maior que a imagem */
     }
 }
