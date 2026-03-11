@@ -109,3 +109,21 @@ summary { padding: 1rem; cursor: pointer; font-weight: bold; outline: none; }
 .btn-rosa { background: var(--rosa); color: white; }
 .btn-amarelo { background: var(--amarelo); color: var(--preto); }
 .btn:hover { transform: scale(1.05); filter: brightness(1.1); }
+
+/* BOTÃO VOLTAR */
+.btn-voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--roxo);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    color: var(--rosa);
+    transform: translateX(-5px);
+}
