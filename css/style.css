@@ -156,3 +156,32 @@ footer {
     border-radius: 50%;
     object-fit: cover;
 }
+
+/* Animação para o Avatar flutuar */
+@keyframes flutuar {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.avatar-amelia {
+    animation: flutuar 4s ease-in-out infinite;
+    max-width: 100%;
+    height: auto;
+    /* Adiciona uma sombra suave embaixo da personagem */
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3));
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+    text-align: left; /* Muda de center para left */
+}
+
+@media (min-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr 1fr; /* Duas colunas no computador */
+    }
+}
