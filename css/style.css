@@ -18,9 +18,17 @@ body {
     background-color: var(--bege);
     color: var(--preto);
     line-height: 1.6;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Faz o corpo ter pelo menos o tamanho da tela */
 }
 
 .font-heading { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; }
+
+main {
+    flex: 1; /* Isso faz o conteúdo do meio crescer e empurrar o rodapé */
+}
 
 /* NAVEGAÇÃO */
 nav {
