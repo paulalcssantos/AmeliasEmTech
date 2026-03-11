@@ -8,35 +8,32 @@
 </head>
 <body>
   <nav>
-    <div class="nav-container">
-      <!-- Clicar aqui agora sempre volta para a Home -->
-      <a href="index.html" class="font-heading text-white text-xl">
-        AMELIAS <span style="color:var(--amarelo)">em Tech</span>
-      </a>
-      
-      <div class="nav-links font-heading">
-        <a href="index.html">Home</a> <!-- Adicionei o link Home aqui também -->
-        <a href="sobre.html">Sobre</a>
-        <a href="aulas.html">Aulas</a>
-        <a href="inspiracoes.html">Inspirações</a>
-        <a href="participar.html" style="color:var(--amarelo)">Participar</a>
-      </div>
+  <div class="nav-container">
+    <div class="flex items-center gap-3">
+        <!-- Botão Voltar Discreto -->
+        <a href="index.html" style="color: white; text-decoration: none; font-size: 1.5rem; margin-right: 5px;">←</a>
+        
+        <!-- Logo Image + Título -->
+        <a href="index.html" class="flex items-center gap-2" style="text-decoration: none;">
+            <img src="assets/logo.png" alt="Logo Amelias" class="nav-logo-img">
+            <span class="font-heading text-white text-lg">AMELIAS <span style="color:var(--amarelo)">em Tech</span></span>
+        </a>
     </div>
-  </nav>
-  
-  <section class="py-12 max-w-5xl mx-auto px-4">
-    <!-- BOTÃO NOVO AQUI -->
-    <a href="index.html" class="btn-voltar font-heading">
-      ← Voltar para o Início
-    </a>
-  </section>
+    
+    <div class="nav-links font-heading">
+      <a href="sobre.html">Sobre</a>
+      <a href="aulas.html">Aulas</a>
+      <a href="inspiracoes.html">Inspirações</a>
+      <a href="dados.html">Dados</a> <!-- Link de Dados no Menu -->
+      <a href="participar.html" style="color:var(--amarelo)">Participar</a>
+    </div>
+  </div>
+</nav>
 
   <section class="py-20 max-w-4xl mx-auto px-4">
     <h2 class="font-heading text-4xl text-center mb-10" style="color:var(--roxo)">Por que Amelias?</h2>
     <p class="text-xl leading-relaxed mb-8">O nome <strong>Amelias em Tech</strong> nasce da ideia de ressignificar um termo historicamente associado a expectativas limitadas sobre as mulheres. Aqui, Amelia é curiosa, criativa e constrói seu próprio caminho tecnológico.</p>
-  </section>
 
-  <section id="instructor" class="py-24" style="background-color: #eee6db;">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
      <div class="text-center mb-16">
       <h2 class="font-heading font-bold text-4xl md:text-5xl text-white mb-6" style="color: #262324;">Sobre a Idealizadora</h2>
@@ -85,6 +82,6 @@
       </div>
      </div>
     </div>
-   </section>
+  </section>
 </body>
 </html>
