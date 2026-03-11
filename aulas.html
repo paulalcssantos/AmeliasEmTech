@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Aulas | Amelias em Tech</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="font-heading text-white text-xl">AMELIAS <span style="color:var(--amarelo)">em Tech</span></a>
+      <div class="nav-links font-heading">
+        <a href="sobre.html">Sobre</a>
+        <a href="aulas.html">Aulas</a>
+        <a href="inspiracoes.html">Inspirações</a>
+        <a href="dados.html">Dados</a>
+        <a href="participar.html" style="color:var(--amarelo)">Participar</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-20 max-w-5xl mx-auto px-4">
+    <h1 class="font-heading text-4xl text-center mb-16" style="color:var(--roxo)">Tech in Your Pocket</h1>
+
+    <div class="space-y-12">
+      <!-- CARD DE AULA -->
+      <div class="bg-white rounded-[2.5rem] shadow-2xl overflow-hidden grid md:grid-cols-2">
+        <div class="p-6 bg-black">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="p-10">
+          <span class="font-heading text-xs text-white bg-rosa px-4 py-1 rounded-full">Aula 1</span>
+          <h2 class="font-heading text-2xl my-4">O que é Programação?</h2>
+          
+          <div class="flex gap-4 mb-6">
+            <a href="assets/aula1.pdf" target="_blank" class="text-sm font-bold text-roxo underline">📄 Abrir PDF</a>
+          </div>
+
+          <details>
+            <summary class="font-heading text-sm">🚀 Desafio Prático</summary>
+            <div class="details-content">
+              <p><strong>Missão:</strong> Crie um algoritmo para fazer um pão com manteiga. Seja tão específica que até um robô entenderia!</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
