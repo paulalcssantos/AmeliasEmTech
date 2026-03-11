@@ -127,3 +127,33 @@ summary { padding: 1rem; cursor: pointer; font-weight: bold; outline: none; }
     color: var(--rosa);
     transform: translateX(-5px);
 }
+
+/* RODAPÉ (FOOTER) */
+footer {
+    background-color: var(--preto);
+    color: white;
+    padding: 3rem 1rem;
+    margin-top: 4rem;
+    border-top: 4px solid var(--rosa);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.footer-logo { font-size: 1.2rem; margin-bottom: 1rem; }
+.footer-links a { color: var(--bege); text-decoration: none; display: block; margin-bottom: 0.5rem; font-size: 0.8rem; }
+.footer-links a:hover { color: var(--amarelo); }
+
+.nav-logo-img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--amarelo);
+}
