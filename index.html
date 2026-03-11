@@ -1,280 +1,50 @@
 <!doctype html>
-<html lang="pt-BR" class="h-full">
- <head>
+<html lang="pt-BR">
+<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amelias em Tech</title>
-  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Montserrat 700 e Source Sans 3 400/600 -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    html, body { height: 100%; margin: 0; }
-    * { box-sizing: border-box; }
-    
-    .font-heading { font-family: 'Montserrat', sans-serif; font-weight: 700; }
-    .font-body { font-family: 'Source Sans 3', sans-serif; font-weight: 400; }
-    
-    .gradient-hero {
-      background: linear-gradient(135deg, #4c4e80 0%, #262324 100%);
-    }
-    
-    .card-hover {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card-hover:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 40px rgba(76, 78, 128, 0.3);
-    }
-    
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      border-radius: 1.5rem;
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0; left: 0; width: 100%; height: 100%; border: 0;
-    }
-
-    .nav-link { position: relative; }
-    .nav-link::after {
-      content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px;
-      background: #e1345e; transition: width 0.3s ease;
-    }
-    .nav-link:hover::after { width: 100%; }
-    
-    .scroll-smooth { scroll-behavior: smooth; }
-  </style>
- </head>
-
- <body class="h-full font-body scroll-smooth" style="background-color: #eee6db;">
-  <div id="app-wrapper" class="w-full h-full overflow-auto">
-   
-   <!-- Navigation -->
-   <nav class="fixed top-0 left-0 right-0 z-50 shadow-lg" style="background-color: rgba(76, 78, 128, 0.95); backdrop-filter: blur(10px);">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-     <div class="flex items-center justify-between h-16">
-      <a href="#home" class="flex items-center gap-2">
-       <img src="assets/logo.png" alt="Amelias em Tech" class="w-10 h-10 rounded-full">
-       <span class="font-heading text-xl text-white" style="color: #fbd45c;">AMELIAS</span> <span class="font-heading text-xl text-white" style="color: #eee6db;">em Tech</span>
-      </a>
-      <div class="hidden md:flex items-center gap-6 uppercase text-xs">
-       <a href="#about" class="nav-link text-white font-heading">Sobre</a> 
-       <a href="#stats" class="nav-link text-white font-heading">Dados</a> 
-       <a href="#inspiration" class="nav-link text-white font-heading">Inspiração</a> 
-       <a href="#videos" class="nav-link text-white font-heading">Tech in Your Pocket</a> 
-       <a href="#instructor" class="nav-link text-white font-heading">Idealizadora</a> 
-       <a href="#contact" class="nav-link text-white font-heading">Contato</a>
-      </div>
-     </div>
-    </div>
-   </nav>
-
-   <!-- Hero Section -->
-   <section id="home" class="gradient-hero min-h-screen flex items-center relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 relative z-10">
-     <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <div class="animate-fade-in">
-       <h1 class="font-heading text-5xl md:text-7xl text-white mb-6 leading-tight" style="color: #fbd45c;">AMELIAS<br> <span style="color: #eee6db;">em Tech</span></h1>
-       <p class="text-xl md:text-2xl text-white/80 mb-8 leading-relaxed">Empoderando meninas através da tecnologia.</p>
-       <p class="text-xl md:text-2xl text-white/80 mb-8 leading-relaxed" style="color: #fadaa3;">Aqui, Amelia é escolha e autonomia!</p>
-       <div class="flex flex-wrap gap-4">
-        <a href="#videos" class="px-8 py-4 rounded-full font-heading text-white transition-all hover:scale-105" style="background-color: #e1345e;"> Assistir Aulas </a>
-        <a href="#about" class="px-8 py-4 rounded-full font-heading transition-all hover:scale-105" style="background-color: #fbd45c; color: #262324;"> Sobre o Projeto </a>
-       </div>
-      </div>
-      <div class="hidden lg:block relative">
-       <img src="assets/avatar-amelias.png" alt="Meninas no projeto" class="rounded-3xl">
-      </div>
-     </div>
-    </div>
-   </section>
-
-   <!-- About -->
-   <section id="about" class="py-24">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <div class="text-center mb-16">
-       <span class="inline-block px-4 py-2 rounded-full text-sm font-heading font-medium mb-4" style="background-color: #fadaa3; color: #262324;"> Nossa Missão </span>
-       <h2 class="font-heading text-4xl md:text-5xl mb-6 text-[#4c4e80]">Sobre o Projeto</h2>
-       <p class="text-xl leading-relaxed mb-6 text-[#262324]">O <strong>Amelias em Tech</strong> nasceu da vontade de transformar o cenário da tecnologia no Brasil. Acreditamos que toda menina tem potencial para criar, inovar e liderar no mundo digital.</p>
-       <p class="text-xl leading-relaxed mb-6 text-[#262324]">Oferecemos aulas gratuitas de programação, mentoria e uma comunidade acolhedora para que meninas de baixa renda vejam na tecnologia uma nova possibilidade de futuro.</p>
-     </div>
-    </div>
-   </section>
-
-   <!-- DADOS REAIS ATUALIZADOS -->
-   <section id="stats" class="py-24 bg-[#262324]">
-    <div class="max-w-7xl mx-auto px-4">
-     <div class="text-center mb-16">
-      <span class="inline-block px-4 py-2 rounded-full text-sm font-heading font-medium mb-4" style="background-color: #e1345e; color: white;"> Por que importa?</span>
-      <h2 class="font-heading font-bold text-4xl md:text-5xl mb-6" style="color: #fbd45c;">O Cenário Real</h2>
-      <p class="text-xl text-white/70 max-w-2xl mx-auto">Os números mostram a realidade que queremos mudar. Cada estatística é um motivo para continuarmos.</p>
-     </div>
-     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="p-8 rounded-3xl text-center card-hover bg-[#4c4e80]">
-       <div class="text-5xl font-heading mb-2 text-[#fbd45c]">20%</div>
-       <p class="text-white/80 font-heading text-xs uppercase">das vagas de TI no Brasil são ocupadas por mulheres</p>
-      </div>
-      <div class="p-8 rounded-3xl text-center card-hover bg-[#4c4e80]">
-       <div class="text-5xl font-heading mb-2 text-[#fadaa3]">15%</div>
-       <p class="text-white/80 font-heading text-xs uppercase">dos estudantes em cursos de computação são mulheres</p>
-      </div>
-      <div class="p-8 rounded-3xl text-center card-hover bg-[#4c4e80]">
-       <div class="text-5xl font-heading mb-2 text-[#e1345e]"><5%</div>
-       <p class="text-white/80 font-heading text-xs uppercase">é a representação de mulheres pretas em tecnologia</p>
-      </div>
-      <div class="p-8 rounded-3xl text-center card-hover bg-[#4c4e80]">
-       <div class="text-5xl font-heading mb-2 text-[#fbd45c]">R$ 0,77</div>
-       <p class="text-white/80 font-heading text-xs uppercase">é o que mulheres ganham comparado a R$ 1 pago a homens em TI</p>
-      </div>
-     </div>
-    </div>
-   </section>
-
-   <!-- Inspiração -->
-   <section id="inspiration" class="py-24" style="background-color: #eee6db;">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-     <div class="text-center mb-16">
-      <span class="inline-block px-4 py-2 rounded-full text-sm font-heading font-medium mb-4" style="background-color: #4c4e80; color: white;"> Nossas Inspirações </span>
-      <h2 class="font-heading font-bold text-4xl md:text-5xl mb-6" style="color: #e1345e;">Mulheres que Mudaram a Tecnologia</h2>
-      <p class="text-xl max-w-2xl mx-auto" style="color: #262324;">Conheça as pioneiras que abriram caminho e continuam nos inspirando a sonhar grande.</p>
-     </div>
-     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Ada Lovelace -->
-      <div class="rounded-3xl overflow-hidden card-hover bg-white shadow-xl">
-       <img src="assets/ada.jpg" alt="Ada Lovelace" class="w-full h-64 object-cover">
-       <div class="p-6">
-        <h3 class="font-heading text-xl mb-2 text-[#4c4e80]">Ada Lovelace</h3>
-        <p class="text-sm text-gray-600">Considerada a primeira programadora do mundo, escreveu o primeiro algoritmo da história.</p>
-       </div>
-      </div>
-      <!-- Hedy -->
-      <div class="rounded-3xl overflow-hidden card-hover bg-white shadow-xl">
-       <img src="assets/hedy-lamarr.jpg" alt="Hedy Lamarr" class="w-full h-64 object-cover">
-       <div class="p-6">
-        <h3 class="font-heading text-xl mb-2 text-[#4c4e80]">Hedy Lamarr</h3>
-        <p class="text-sm text-gray-600">Atriz e inventora que criou a base do Wi-Fi e Bluetooth. Sua tecnologia de "salto de frequência" revolucionou as comunicações.</p>
-       </div>
-      </div>
-      <!-- Grace -->
-      <div class="rounded-3xl overflow-hidden card-hover bg-white shadow-xl">
-       <img src="assets/grace-hopper.jpg" alt="Grace Hopper" class="w-full h-64 object-cover">
-       <div class="p-6">
-        <h3 class="font-heading text-xl mb-2 text-[#4c4e80]">Grace Hopper</h3>
-        <p class="text-sm text-gray-600">Almirante da Marinha e Cientista da Computação. Criou o primeiro compilador e popularizou o termo "bug".</p>
-       </div>
-      </div>       
-      </div>
-     </div>
-   </section>
-
-   <!-- Videos -->
-   <section id="videos" class="py-24 bg-[#4c4e80]">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="text-center mb-16">
-       <span class="inline-block px-4 py-2 rounded-full text-sm font-heading font-medium mb-4" style="background-color: #fbd45c; color: #262324;"> Aprenda no seu ritmo </span>
-       <h2 class="font-heading font-bold text-4xl md:text-5xl mb-6" style="color: #fbd45c;">Tech in Your Pocket</h2>
-       <p class="text-xl text-white/70 max-w-2xl mx-auto">Tecnologia no seu bolso! Nossas aulas gravadas para você assistir quando e onde quiser.</p>
-      </div>
-     <div class="grid md:grid-cols-2 gap-12">
-      <!-- Video 1 -->
-      <div class="bg-[#262324] p-4 rounded-[2rem]">
-       <div class="video-container shadow-2xl">
-        <iframe src="https://www.youtube.com/embed/SEU_ID_AQUI" allowfullscreen></iframe>
-       </div>
-       <div class="p-4">
-        <h3 class="font-heading text-lg text-white">Aula 1: Lógica com o Celular</h3>
-       </div>
-      </div>
-      <!-- Video 2 -->
-      <div class="bg-[#262324] p-4 rounded-[2rem]">
-       <div class="video-container shadow-2xl">
-        <iframe src="https://www.youtube.com/embed/SEU_ID_AQUI" allowfullscreen></iframe>
-       </div>
-       <div class="p-4">
-        <h3 class="font-heading text-lg text-white">Aula 2: Minha primeira linha de código</h3>
-       </div>
-      </div>
-     </div>
-    </div>
-   </section>
-
-   <!-- Idealizadora -->
-   <section id="instructor" class="py-24" style="background-color: #eee6db;">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-     <div class="text-center mb-16">
-      <h2 class="font-heading font-bold text-4xl md:text-5xl text-white mb-6" style="color: #262324;">Sobre a Idealizadora</h2>
-     </div>
-     <div class="grid lg:grid-cols-2 gap-16 items-center">
-      <div class="relative">
-       <div class="rounded-3xl overflow-hidden" style="background: linear-gradient(135deg, #e1345e, #fbd45c);">
-        <div class="aspect-square flex items-center justify-center relative" style="background-color: #262324;">
-         <div id="instructor-photo-container" class="w-full h-full flex items-center justify-center text-9xl">
-          <img src="assets/paula-luiza.jpg" alt="Paula Luiza" class="rounded-3xl border-8 border-[#fbd45c] shadow-2xl">
-         </div>
-        </div>
-       </div>
-       <div class="absolute -bottom-6 -right-6 w-32 h-32 rounded-2xl flex items-center justify-center" style="background-color: #fbd45c;">
-        <div class="text-center">
-         <div class="text-5xl mb-2">
-          🚀
-         </div>
-         <div class="font-heading font-bold text-white" style="color: #262324;">
-          5+ anos<br>
-           em Tech
-         </div>
-        </div>
-       </div>
-      </div>
-      <div>
-       <h3 id="instructor-name" class="font-heading font-bold text-4xl text-white mb-4" style="color: #4c4e80;">Paula Luiza</h3>
-       <div id="instructor-bio" class="text-white/80 text-lg leading-relaxed mb-8 font-body" style="color: #262324;">
-        <p class="mb-4">Sou Paula Luiza, Cientista da Computação com especialização em Ciência de Dados, área que integra o universo da Inteligência Artificial.</p>
-        <p class="mb-4">Tenho mais de 5 anos de experiência na tecnologia, atuando com bancos de dados, SQL e na construção de processos que sustentam soluções orientadas por dados.</p>
-        <p>Além do lado técnico, carrego um propósito muito forte na educação e no apoio a outras mulheres. Sou Diretora da Worldwide Women in Tech, professora voluntária na WoMakersCode e voluntária na {reprograma}, onde já contribuí com conteúdos sobre IA.</p>
-       </div>
-       <p class="text-white/70 italic mb-8 text-lg" style="color: #4c4e80;">Tudo isso para que mais mulheres tenham oportunidades reais de aprender, crescer e se destacar na tecnologia e nas demais áreas de STEM. </p>
-       <div class="flex items-center gap-6"><a href="https://www.linkedin.com/in/paulalcssantos/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full flex items-center justify-center transition-all hover:scale-110" style="background-color: #e1345e;">
-         <svg class="w-7 h-7" fill="#eee6db" viewbox="0 0 24 24">
-          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-         </svg></a> <a href="https://instagram.com/paulalcss" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full flex items-center justify-center transition-all hover:scale-110" style="background-color: #e1345e;">
-         <svg class="w-7 h-7 text-white" fill="#eee6db" viewbox="0 0 24 24">
-          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z" /> <path d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8z" /> <circle cx="18.406" cy="5.594" r="1.44" />
-         </svg></a>
-        <div class="flex-1 text-left">
-         <p class="text-white/60 text-xs font-heading mb-1" style="color: #262324;">Conecte-se com Paula</p>
-         <p class="text-white/80 font-heading" style="color: #262324;">LinkedIn • Instagram</p>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </section>
-
-  <!-- Separator -->
-   <div class="h-1" style="background: linear-gradient(90deg, transparent, #e1345e, transparent);"></div>
-
-   <!-- Contato -->
-   <section id="contact" class="py-24 bg-[#eee6db] text-center">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="font-heading text-4xl mb-6 text-[#4c4e80]">Vamos Conversar?</h2>
-      <p class="text-xl mb-12">Dúvidas, parcerias ou inscrições? Entre em contato!</p>
-      <div class="flex flex-col md:flex-row justify-center gap-8">
-        <a href="mailto:contato@ameliasintech.org" class="text-xl font-heading text-[#e1345e] hover:underline">contato@ameliasintech.org</a>
-        <!-- INSTAGRAM PROJETO -->
-        <a href="https://instagram.com/ameliasemtech" target="_blank" class="text-xl font-heading text-[#4c4e80] hover:underline">@ameliasemtech</a>
+  <title>Home | Amelias em Tech</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="font-heading text-white text-xl">AMELIAS <span style="color:var(--amarelo)">em Tech</span></a>
+      <div class="nav-links font-heading">
+        <a href="sobre.html">Sobre</a>
+        <a href="aulas.html">Aulas</a>
+        <a href="inspiracoes.html">Inspirações</a>
+        <a href="dados.html">Dados</a>
+        <a href="participar.html" style="color:var(--amarelo)">Participar</a>
       </div>
     </div>
-   </section>
+  </nav>
 
-   <footer class="py-12 bg-[#262324] text-center">
-    <p class="font-heading text-white/60 text-sm uppercase">© 2026 Amelias em Tech | O futuro é Delas 💜</p>
-   </footer>
+  <header class="py-32 text-center text-white" style="background: linear-gradient(135deg, var(--roxo) 0%, var(--preto) 100%);">
+    <h1 class="font-heading text-6xl mb-6">AMELIAS em Tech 🌻</h1>
+    <p class="text-xl max-w-2xl mx-auto mb-10 opacity-90">Meninas aprendendo tecnologia, criando o futuro! Um projeto para meninas de 10 a 17 anos.</p>
+    <div class="flex justify-center gap-4">
+      <a href="sobre.html" class="btn btn-amarelo font-heading">Conhecer o projeto</a>
+      <a href="aulas.html" class="btn btn-rosa font-heading">Assistir aulas</a>
+    </div>
+  </header>
 
-  </div>
- </body>
+  <section class="py-20 max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+    <div class="card text-center">
+      <span class="text-5xl">💻</span>
+      <h3 class="font-heading my-4">Programação</h3>
+      <p>Aprenda lógica e crie seus primeiros códigos.</p>
+    </div>
+    <div class="card text-center">
+      <span class="text-5xl">📱</span>
+      <h3 class="font-heading my-4">No Celular</h3>
+      <p>Desenvolva apps usando apenas o seu smartphone.</p>
+    </div>
+    <div class="card text-center">
+      <span class="text-5xl">🤖</span>
+      <h3 class="font-heading my-4">Inteligência Artificial</h3>
+      <p>Explore o futuro da tecnologia com criatividade.</p>
+    </div>
+  </section>
+</body>
 </html>
