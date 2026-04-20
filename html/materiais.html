@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materiais | Amelias em Tech</title>
+    <link rel="icon" type="image/png" href="../assets/img/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="logo-link">
+            <img src="../assets/img/logo.png" class="logo-img">
+            <span class="font-heading text-white text-xl">
+                <span style="color:var(--amarelo)">AMELIAS</span> EM TECH
+            </span>
+        </a>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menu">
+        <div class="close-menu-btn" onclick="toggleMenu()">&times;</div>
+        <a href="../index.html">Home</a>
+        <a href="aulas.html">Aulas</a>
+        <a href="inspiracoes.html">Inspirações</a>
+        <!--<a href="html/projetos.html">Projetos</a> -->
+        <a href="materiais.html">Materiais</a>
+        <a href="participar.html" class="participar-link">Faça Parte</a>
+    </div>
+
+    <main>
+        <section class="py-16 max-w-4xl mx-auto px-4">
+            <h1 class="font-heading text-4xl text-center mb-6 text-[#4c4e80]">Biblioteca de Materiais</h1>
+            <p class="text-center mb-12 opacity-80">Baixe nossos guias e exercícios para continuar sua jornada mesmo quando estiver sem internet!</p>
+
+            <div class="space-y-6">                             
+
+                <!-- Item de Material 1 -->
+                <div class="bg-white p-6 rounded-3xl shadow-sm border-l-8 border-roxo flex flex-col md:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center gap-4">
+                        <span class="text-3xl"><img src="../assets/img/book.png" alt="Ícone Livro" class="w-10 h-10 mx-auto mb-2"></span>
+                        <div>
+                            <h3 class="font-heading text-[#4c4e80]">Guia: Minha Carreira em Tech</h3>
+                            <p class="text-sm opacity-70">Descubra as profissões em tecnologia e veja com quais você se identifica.</p>
+                        </div>
+                    </div>
+                    <a href="../assets/pdf/guia-carreira.pdf" download class="btn btn-rosa text-xs" style="background-color: var(--roxo);" target="_blank">Baixar PDF</a>
+                </div>
+
+                <!-- Item de Material 2 -->
+                <div class="bg-white p-6 rounded-3xl shadow-sm border-l-8 border-rosa flex flex-col md:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center gap-4">
+                        <span class="text-3xl"><img src="../assets/img/dictionary.png" alt="Ícone Dicionario" class="w-10 h-10 mx-auto mb-2"></span>
+                        <div>
+                            <h3 class="font-heading text-[#4c4e80]">Dicionário Tech</h3>
+                            <p class="text-sm opacity-70">Tradução simples de nomes difíceis da tecnologia.</p>
+                        </div>
+                    </div>
+                    <a href="../assets/pdf/dicionario.pdf" download class="btn btn-rosa text-xs" target="_blank">Baixar PDF</a>
+                </div> 
+
+                <!-- Item de Material 3 -->
+                <div class="bg-white p-6 rounded-3xl shadow-sm border-l-8 border-amarelo flex flex-col md:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center gap-4">
+                        <span class="text-3xl"><img src="../assets/img/sketchbook.png" alt="Ícone Sketchbook" class="w-10 h-10 mx-auto mb-2"></span>
+                        <div>
+                            <h3 class="font-heading text-[#4c4e80]">Caderno de Lógica Desplugada</h3>
+                            <p class="text-sm opacity-70">Exercícios de lógica para fazer com papel e caneta.</p>
+                        </div>
+                    </div>
+                    <a href="../assets/pdf/caderno-logica.pdf" download class="btn btn-amarelo text-xs" target="_blank">Baixar PDF</a>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-white p-6 rounded-3xl border-2 border-dashed border-[#e1345e] text-center">
+                <p class="text-sm italic font-bold">Dica: Salve esses arquivos no seu celular para consultar durante as aulas!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>© 2026 AMELIAS EM TECH by Paula Luiza</footer>
+
+    <script>
+        function toggleMenu() { document.getElementById('menu').classList.toggle('active'); }
+    </script>
+</body>
+</html>

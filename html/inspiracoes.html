@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas | Amelias em Tech</title>
+    <link rel="icon" type="image/png" href="../assets/img/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- NOTA: O link agora tem ../ para subir uma pasta e achar o CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="logo-link">
+            <img src="../assets/img/logo.png" class="logo-img">
+            <span class="font-heading text-white text-xl">
+                <span style="color:var(--amarelo)">AMELIAS</span> EM TECH
+            </span>
+        </a>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menu">
+        <div class="close-menu-btn" onclick="toggleMenu()">&times;</div>
+        <a href="../index.html">Home</a>
+        <a href="aulas.html">Aulas</a>
+        <a href="inspiracoes.html">Inspirações</a>
+        <!--<a href="html/projetos.html">Projetos</a> -->
+        <a href="materiais.html">Materiais</a>
+        <a href="participar.html" class="participar-link">Faça Parte</a>
+    </div>
+
+    <main>
+       <section class="py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4">
+                
+                <div class="text-center mb-20">
+                    <span class="inline-block px-4 py-2 rounded-full text-xs font-bold bg-[#e1345e] text-white mb-4 uppercase tracking-widest"> 
+                        Nossas Inspirações 
+                    </span>
+                    <h2 class="text-4xl md:text-4xl font-bold text-[#4c4e80] mb-6 font-heading">Mulheres que Mudaram a Tecnologia</h2>                    
+                    <p class="text-center mb-12 opacity-80">Conheça as pioneiras que abriram caminho e continuam nos inspirando a sonhar grande e programar o futuro.</p>
+
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    
+                    <!-- ADA LOVELACE -->
+                    <div class="heroine-card">
+                        <div class="heroine-img-container">
+                            <img src="../assets/img/ada.jpg" alt="Ada Lovelace">
+                            <span class="date-badge">1815 - 1852</span>
+                        </div>
+                        <div class="heroine-info">
+                            <h3 class="font-heading text-xl text-[#4c4e80] mb-3">Ada Lovelace</h3>
+                            <p class="text-sm opacity-80 leading-relaxed">Considerada a primeira programadora da história. Escreveu o primeiro algoritmo para ser processado por uma máquina analítica.</p>
+                            <div class="tag-container">
+                                <span class="tech-tag tag-roxo">Matemática</span>
+                                <span class="tech-tag tag-rosa">Algoritmos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HEDY LAMARR -->
+                    <div class="heroine-card">
+                        <div class="heroine-img-container">
+                            <img src="../assets/img/hedy-lamarr.jpg" alt="Hedy Lamarr">
+                            <span class="date-badge">1914 - 2000</span>
+                        </div>
+                        <div class="heroine-info">
+                            <h3 class="font-heading text-xl text-[#4c4e80] mb-3">Hedy Lamarr</h3>
+                            <p class="text-sm opacity-80 leading-relaxed">Atriz e inventora. Criou a tecnologia de salto de frequência que serviu de base para o Wi-Fi e o Bluetooth.</p>
+                            <div class="tag-container">
+                                <span class="tech-tag tag-roxo">WI-FI</span>
+                                <span class="tech-tag tag-rosa">Telecom</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GRACE HOPPER -->
+                    <div class="heroine-card">
+                        <div class="heroine-img-container">
+                            <img src="../assets/img/grace-hopper.jpg" alt="Grace Hopper">
+                            <span class="date-badge">1906 - 1992</span>
+                        </div>
+                        <div class="heroine-info">
+                            <h3 class="font-heading text-xl text-[#4c4e80] mb-3">Grace Hopper</h3>
+                            <p class="text-sm opacity-80 leading-relaxed">Almirante da Marinha dos EUA e Cientista da Computação. Criou o COBOL, uma das primeiras linguagens de programação e popularizou o termo "bug".</p>
+                            <div class="tag-container">
+                                <span class="tech-tag tag-roxo">COBOL</span>
+                                <span class="tech-tag tag-rosa">Programação</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KATHERINE JOHNSON -->
+                    <div class="heroine-card">
+                        <div class="heroine-img-container">
+                            <img src="../assets/img/katherine-johnson.jpg" alt="Katherine Johnson">
+                            <span class="date-badge">1918 - 2020</span>
+                        </div>
+                        <div class="heroine-info">
+                            <h3 class="font-heading text-xl text-[#4c4e80] mb-3">Katherine Johnson</h3>
+                            <p class="text-sm opacity-80 leading-relaxed">Matemática da NASA. Seus cálculos manuais foram essenciais para o sucesso do primeiro voo tripulado à Lua.</p>
+                            <div class="tag-container">
+                                <span class="tech-tag tag-roxo">Aeroespacial</span>
+                                <span class="tech-tag tag-rosa">Cálculo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- GLADYS WEST -->
+                    <div class="heroine-card">
+                        <div class="heroine-img-container">
+                            <img src="../assets/img/gladys-west.jpg" alt="Gladys West">
+                            <span class="date-badge">1930 - 2026</span>
+                        </div>
+                        <div class="heroine-info">
+                            <h3 class="font-heading text-xl text-[#4c4e80] mb-3">Gladys West</h3>
+                            <p class="text-sm opacity-80 leading-relaxed">Matemática conhecida como "mãe do GPS" por desenvolver modelos complexos que mapearam com precisão a forma da Terra.</p>
+                            <div class="tag-container">
+                                <span class="tech-tag tag-roxo">GPS</span>
+                                <span class="tech-tag tag-rosa">Matemática</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MARGARET HAMILTON -->
+                    <div class="heroine-card">
+                        <div class="heroine-img-container">
+                            <img src="../assets/img/margaret-hamilton.jpg" alt="Margaret Hamilton">
+                            <span class="date-badge">1936 - Atual</span>
+                        </div>
+                        <div class="heroine-info">
+                            <h3 class="font-heading text-xl text-[#4c4e80] mb-3">Margaret Hamilton</h3>
+                            <p class="text-sm opacity-80 leading-relaxed">Cientista da Computação que liderou a equipe que desenvolveu o software de voo do Apollo 11, que pousou na Lua.</p>
+                            <div class="tag-container">
+                                <span class="tech-tag tag-roxo">Apollo 11</span>
+                                <span class="tech-tag tag-rosa">Programação</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>© 2026 AMELIAS EM TECH by Paula Luiza</footer>
+
+    <script>
+        function toggleMenu() { document.getElementById('menu').classList.toggle('active'); }
+    </script>
+</body>
+</html>

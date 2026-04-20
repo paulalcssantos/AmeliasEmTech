@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aulas | Amelias em Tech</title>
+    <link rel="icon" type="image/png" href="../assets/img/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="logo-link">
+            <img src="../assets/img/logo.png" class="logo-img">
+            <span class="font-heading text-white text-xl">
+                <span style="color:var(--amarelo)">AMELIAS</span> EM TECH
+            </span>
+        </a>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menu">
+        <div class="close-menu-btn" onclick="toggleMenu()">&times;</div>
+        <a href="../index.html">Home</a>
+        <a href="aulas.html">Aulas</a>
+        <a href="inspiracoes.html">Inspirações</a>
+        <!--<a href="html/projetos.html">Projetos</a> -->
+        <a href="materiais.html">Materiais</a>
+        <a href="participar.html" class="participar-link">Faça Parte</a>
+    </div>
+
+    <main>
+        <section>            
+            <h1 class="font-heading text-4xl text-center mb-6 text-[#4c4e80]">Tech in Your Pocket</h1>
+            <p class="text-center mb-12 opacity-80">Nossas aulas gravadas para você assistir quando e onde quiser. Tecnologia no seu bolso!</p>
+
+            
+            <div class="max-w-5xl mx-auto space-y-12">
+                <div class="card grid md:grid-cols-2 gap-8 items-center" style="text-align: left;">
+                    <div class="video-box" style="position: relative; padding-bottom: 56.25%; height: 0; border-radius: 1rem; overflow: hidden; background: #000;">
+                       <iframe style="position: absolute; top:0; left:0; width:100%; height:100%;" src="https://www.youtube.com/embed/9-I3-sDoljo?si=VGJiDYS_FVtzfnBt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div>
+                        <span class="bg-rosa text-white px-3 py-1 rounded-full text-xs font-heading">Aula 1</span>
+                        <h3 class="font-heading text-2xl my-4">Código Binário: A Linguagem dos Computadores</h3>
+                        <a href="../assets/pdf/aula1.pdf" class="btn btn-rosa text-xs mb-4" target="_blank">PDF da Aula</a>
+                        <details class="bg-bege p-4 rounded-xl cursor-pointer">
+                            <summary class="font-heading text-xs">🚀 Desafio Prático</summary>
+                            <p class="mt-4 text-sm">Pegue cada letra do seu nome e converta para os números binários correspondentes. </p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>© 2026 AMELIAS EM TECH by Paula Luiza</footer>
+
+    <script>
+        function toggleMenu() { document.getElementById('menu').classList.toggle('active'); }
+    </script>
+</body>
+</html>

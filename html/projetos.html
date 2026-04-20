@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos | Amelias em Tech</title>
+    <link rel="icon" type="image/png" href="../assets/img/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="logo-link">
+            <img src="../assets/img/logo.png" class="logo-img">
+            <span class="font-heading text-white text-xl">
+                <span style="color:var(--amarelo)">AMELIAS</span> EM TECH
+            </span>
+        </a>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menu">
+        <div class="close-menu-btn" onclick="toggleMenu()">&times;</div>
+        <a href="../index.html" onclick="toggleMenu()">Home</a>
+        <a href="aulas.html">Aulas</a>
+        <a href="inspiracoes.html">Inspirações</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="materiais.html">Materiais</a>
+        <a href="participar.html" class="participar-link">Faça Parte</a>
+    </div>
+
+    <main>
+        <section class="py-16">
+            <h1 class="font-heading text-4xl text-center mb-6 text-[#4c4e80]">Projetos das Amelias</h1>
+            <p class="text-center mb-12 max-w-2xl mx-auto opacity-80">Veja exemplos de criações incríveis que mostram que o lugar de menina é onde ela quiser, inclusive no código!</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card Projeto 1 -->
+                <div class="card">
+                    <span class="text-5xl block mb-4">🎮</span>
+                    <h3 class="font-heading text-lg mb-4">Mini-jogo no Scratch</h3>
+                    <p class="text-sm">Desenvolvimento de lógica através da criação de jogos de aventura e labirintos interativos.</p>
+                </div>
+
+                <!-- Card Projeto 2 -->
+                <div class="card">
+                    <span class="text-5xl block mb-4">📱</span>
+                    <h3 class="font-heading text-lg mb-4">Meu Primeiro App</h3>
+                    <p class="text-sm">Aplicativos simples e úteis feitos inteiramente no celular para resolver problemas do dia a dia.</p>
+                </div>
+
+                <!-- Card Projeto 3 -->
+                <div class="card">
+                    <span class="text-5xl block mb-4">🤖</span>
+                    <h3 class="font-heading text-lg mb-4">Chatbot de IA</h3>
+                    <p class="text-sm">Criação de assistentes virtuais inteligentes que conversam e tiram dúvidas sobre diversos temas.</p>
+                </div>
+
+                <!-- Card Projeto 4 -->
+                <div class="card">
+                    <span class="text-5xl block mb-4">🎨</span>
+                    <h3 class="font-heading text-lg mb-4">Histórias Digitais</h3>
+                    <p class="text-sm">Combinação de design, animação e código para contar histórias de forma inovadora.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>© 2026 AMELIAS EM TECH by Paula Luiza</footer>
+
+    <script>
+        function toggleMenu() { document.getElementById('menu').classList.toggle('active'); }
+    </script>
+</body>
+</html>

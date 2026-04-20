@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amelias em Tech | Home</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo-link">
+            <img src="assets/img/logo.png" class="logo-img">
+            <span class="font-heading text-white text-xl">
+                <span style="color:var(--amarelo)">AMELIAS</span> EM TECH
+            </span>
+        </a>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menu">
+        <div class="close-menu-btn" onclick="toggleMenu()">&times;</div>
+        <a href="index.html" onclick="toggleMenu()">Home</a>
+        <a href="html/aulas.html">Aulas</a>
+        <a href="html/inspiracoes.html">Inspirações</a>
+        <!--<a href="html/projetos.html">Projetos</a> -->
+        <a href="html/materiais.html">Materiais</a>
+        <a href="html/participar.html" class="participar-link">Faça Parte</a>
+    </div>
+
+    <main>
+        <!-- HERO -->
+        <header class="hero">
+            <div class="hero-wrapper">
+                
+                <!-- LADO ESQUERDO: TEXTOS -->
+                <div class="hero-text text-center md:text-left">
+                    <h1 class="font-heading text-4xl md:text-6xl mb-6 leading-tight">
+                        <span style="color:var(--amarelo)">AMELIAS</span> EM TECH
+                    </h1>
+                    
+                    <p class="text-lg md:text-2xl mb-6 opacity-90 leading-relaxed">
+                        Meninas aprendendo tecnologia, criando o futuro!<br> 
+                    </p>
+                    
+                    <p class="text-xl md:text-2xl mb-10 leading-relaxed" style="color: var(--amarelo-pastel); font-weight: bold;">
+                        Aqui, Amelia é escolha e autonomia.
+                    </p>
+                    
+                    <!-- BOTÕES SEMPRE ALINHADOS -->
+                    <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                        <a href="html/aulas.html" class="btn btn-rosa shadow-xl font-heading">Assistir Aulas</a>
+                        <a href="html/participar.html" class="btn btn-amarelo shadow-xl font-heading">Faça Parte</a>
+                    </div>
+                </div>
+
+                <!-- LADO DIREITO: IMAGEM (Agora adaptável) -->
+                <div class="hero-image-container">
+                    <img src="assets/img/avatar-amelias.png" alt="Avatar Amelias" class="avatar-amelia">
+                </div>
+            </div>
+
+            <!-- BOTÃO DESCOBRIR (Centro-fundo da tela) -->
+            <a href="#sobre" class="scroll-indicator font-heading">
+                <span style="font-size: 10px; letter-spacing: 2px;">Descobrir</span>
+                <div style="font-size: 24px;">↓</div>
+            </a>
+        </header>
+
+        <!-- SOBRE O PROJETO -->
+        <section id="sobre" class="bg-white">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="font-heading text-3xl md:text-4xl mb-4 text-[#4c4e80]">Sobre Nós</h2>
+                    <div class="w-24 h-1 bg-[#e1345e] mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                     <div class="space-y-6 text-lg leading-relaxed text-[#262324]">
+                        <p>
+                            O <strong class="text-[#e1345e]">AMELIAS Em Tech</strong> é um projeto <strong>gratuito</strong> criado para transformar a relação de meninas de 10 a 15 anos com o mundo digital.<br>Mais do que apenas ensinar a usar ferramentas, nosso objetivo é proporcionar uma <strong>aproximação real com a tecnologia</strong>.
+                        </p>
+                        
+                        <p>
+                            Queremos que cada participante desenvolva <strong>confiança e autonomia</strong>, percebendo que a tecnologia não é apenas algo para ser consumido, mas sim uma ferramenta de criação para o futuro.
+                        </p>
+                        
+                        <p class="font-bold text-[#e1345e]"> Aqui, abrimos portas para que meninas de baixa renda vejam na tecnologia uma nova e brilhante possibilidade de futuro.</p>
+                    </div>
+                    
+                    <!-- Card "Por que Amelias?" -->                    
+                    <div class="bg-[#eee6db] p-8 md:p-12 rounded-[2.5rem] border-2 border-dashed border-[#4c4e80] relative">
+                        <span class="absolute -top-6 -left-6 text-5xl">🌻</span>
+                        <h3 class="font-heading text-xl mb-4 text-[#4c4e80]">Por que Amelias?</h3>
+                        <p class="text-base opacity-90 italic">
+                            O nome nasce da vontade de ressignificar. Historicamente, a 'Amélia' era vista como a mulher que não tinha querer. No nosso projeto, <strong>Amelia é aquela que escolhe, que cria, que programa e que constrói o seu próprio caminho</strong>!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- O QUE ENSINAMOS (4 CARDS) -->
+        <section id="oferecemos">
+            <div class="text-center mb-16">
+                    <h2 class="font-heading text-3xl md:text-4xl mb-4 text-[#4c4e80]">O que ensinamos?</h2>
+                    <div class="w-24 h-1 bg-[#e1345e] mx-auto rounded-full"></div>                    
+                </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card">
+                    <img src="assets/img/coding.png" alt="Ícone Programação" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="font-heading text-sm mb-2">Programação básica</h3>
+                    <p class="text-sm opacity-80">Aprender lógica e criar primeiros projetos.</p>
+                </div>
+                <div class="card">                    
+                    <img src="assets/img/mobile-phone.png" alt="Ícone Mobile" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="font-heading text-sm mb-2">Tecnologia no celular</h3>
+                    <p class="text-sm opacity-80">Apps, desafios e experimentos práticos.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/robot.png" alt="Ícone Robô" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="font-heading text-sm mb-2">Inteligência artificial</h3>
+                    <p class="text-sm opacity-80">Explorar IA de forma criativa e responsável.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/team-spirit.png" alt="Ícone Equipe" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="font-heading text-sm mb-2">Projetos e comunidade</h3>
+                    <p class="text-sm opacity-80">Aprender juntas e compartilhar descobertas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DADOS REAIS -->
+        <section class="bg-[#262324] text-white py-20">            
+            <div class="max-w-[1400px] mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="font-heading text-3xl md:text-4xl">Por que o <span style="color:var(--amarelo)">Amelias</span> importa?</h2>
+                    <div class="w-20 h-1 bg-rosa mx-auto mt-4 rounded-full"></div>
+                    <p class="text-xl text-white/70 max-w-2xl mx-auto">Os números mostram a realidade que queremos mudar.</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <!-- DADO 1 -->
+                    <div class="data-card">
+                        <div class="icon-circle"><img src="assets/img/customer.png" alt="Ícone Programação" class="w-10 h-10 mx-auto mb-2"></div>
+                        <div class="stat-value font-heading">20%</div>
+                        <p class="stat-desc">Mulheres representam <strong>menos de 20%</strong> dos profissionais de TI no Brasil.</p>
+                        <span class="source-clean">Pretalab 2023</span>
+                    </div>
+                    
+                    <!-- DADO 2 -->
+                    <div class="data-card">
+                        <div class="icon-circle"><img src="assets/img/graduation.png" alt="Ícone Graduação" class="w-10 h-10 mx-auto mb-2"></div>
+                        <div class="stat-value font-heading">15%</div>
+                        <p class="stat-desc">Apenas <strong>15% dos concluintes</strong> de cursos de TI e Computação são mulheres.</p>
+                        <span class="source-clean">IBGE / Censo 2022</span>
+                    </div>
+                    
+                    <!-- DADO 3 -->
+                    <div class="data-card">
+                        <div class="icon-circle"><img src="assets/img/schedule.png" alt="Ícone Calendário" class="w-10 h-10 mx-auto mb"></div>
+                        <div class="stat-value font-heading">2110</div>
+                        <p class="stat-desc">No ritmo atual, a <strong>paridade de gênero</strong> em TI só seria atingida no ano 2110.</p>
+                        <span class="source-clean">Observatório Softex</span>
+                    </div>
+                    
+                    <!-- DADO 4 -->
+                    <div class="data-card">
+                        <div class="icon-circle"><img src="assets/img/location.png" alt="Ícone Localização" class="w-10 h-10 mx-auto mb-2"></div>
+                        <div class="stat-value font-heading">8,4%</div>
+                        <p class="stat-desc">Em <strong>Minas Gerais</strong>, a concentração de mulheres na tecnologia é de apenas 8,4%.</p>
+                        <span class="source-clean">Serasa Experian</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE PAULA -->
+        <section id="idealizadora" class="bg-white">
+            <div class="text-center mb-16">
+                    <h2 class="font-heading text-3xl md:text-4xl mb-4 text-[#4c4e80]">Sobre a Idealizadora</h2>
+                    <div class="w-24 h-1 bg-[#e1345e] mx-auto rounded-full"></div>                    
+                </div>
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+                <img src="assets/img/paula-luiza.jpg" class="w-72 h-72 rounded-full border-8 border-amarelo object-cover shadow-2xl">
+                <div class="flex-1">
+                    <div class="text-lg leading-relaxed space-y-4">
+                        <p>Olá! Eu sou a <strong>Paula Luiza</strong>, Cientista da Computação com especialização em Ciência de Dados, e tenho mais de 5 anos de experiência na tecnologia. </p>
+                        <p>Além do lado técnico, carrego um propósito forte no apoio a outras mulheres. Sou Diretora da WorldWide Women in Tech, professora voluntária na WoMakersCode e voluntária na {reprograma}. Tudo isso para que mais mulheres e meninas tenham oportunidades reais de aprender, crescer e se destacar na tecnologia.</p>
+                        <p class="text-[#e1345e]"><strong>Eu sei o quanto a educação, a tecnologia e oportunidades gratuitas podem transformar vidas, pois mudaram a minha!</strong></p>
+                    </div>
+                    <div class="flex gap-6 mt-8">
+                        <a href="https://instagram.com/paulalcss" target="_blank" class="social-btn insta">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/paulalcssantos" target="_blank" class="social-btn linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>© 2026 AMELIAS EM TECH by Paula Luiza</footer>
+
+    <script>
+        function toggleMenu() { document.getElementById('menu').classList.toggle('active'); }
+    </script>
+</body>
+</html>
