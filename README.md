@@ -78,5 +78,5 @@ Este projeto é um conteúdo autoral. O código está aberto para fins de estudo
 ---
 
 <div align="center">
-<p>AMELIAS EM TECH | by Paula Luiza 💜</p>
+<p>AMELIAS EM TECH | por Paula Luiza 💜</p>
 </div>
